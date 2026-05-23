@@ -4,6 +4,8 @@ import testing.dataclasses.*;
 import testing.dataclasses.enums.Status;
 
 import java.security.cert.Extension;
+import java.util.Map;
+import java.util.Set;
 
 public interface Model {
     FileTagInfo getFileTagInfo(String key);
@@ -17,6 +19,9 @@ public interface Model {
     void setTargetBitrate(String key, String bitrate);
     void setTargetSampleSize(String key, int sampleSize);
     void setTargetDirectory(String newDirectory);
+    Map<String, ChannelInfo> getAvaliableChannels(String codec);
+    Set<String> getAvaliableRates();
+    Set<String> getAvaliableCodecs();
 
     void setProgress(String key, double progress);
     void addTagsChanged(String key);
@@ -27,5 +32,21 @@ public interface Model {
     Status getStatus(String key);
     String getTargetFileName(String key);
 
+    Set<String> getFiles();
+    long getDyration(String key);
+    long getMaxVolume(String key);
+    long getVolume(String key);
+    String getCodec(String key);
+    String getRate(String key);
+    String getChannels(String key);
+    String getSampleSize(String key);
+
+    boolean getExecutionType();
+    boolean getParallelType();
+
+    String getCurrentFile();
+
+    long getDieskAvaliableSize(String targetDirectory);
+    int getMaxQuantityOfThreads();
 
 }
