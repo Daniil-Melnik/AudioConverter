@@ -26,4 +26,6 @@ public interface Model {
     boolean getCahngedFile(String key);
     Status getStatus(String key);
     String getTargetFileName(String key);
+
+
 }
