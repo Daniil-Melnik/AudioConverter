@@ -4,6 +4,8 @@ import testing.dataclasses.ChannelInfo;
 
 import java.util.Map;
 
+import static testing.dataclasses.enums.ChannelTypes.MONO;
+
 public class AvaliableChannelsAMR extends AvaliableChannels{
     private Map<String, Map<String, ChannelInfo>> channelsMap;
 
@@ -11,8 +13,8 @@ public class AvaliableChannelsAMR extends AvaliableChannels{
         ChannelInfo mono = ChannelInfo.get("mono", 1);
 
         channelsMap = Map.of(
-            "libopencore_amrnb", Map.of("mono", mono),
-            "amr_nb", Map.of("mono", mono));
+            "libopencore_amrnb", Map.of("mono", MONO.info()),
+            "amr_nb", Map.of("mono", MONO.info()));
     }
 
 

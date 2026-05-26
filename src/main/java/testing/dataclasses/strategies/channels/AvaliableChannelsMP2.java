@@ -4,16 +4,17 @@ import testing.dataclasses.ChannelInfo;
 
 import java.util.Map;
 
+import static testing.dataclasses.enums.ChannelTypes.MONO;
+import static testing.dataclasses.enums.ChannelTypes.STEREO;
+
 public class AvaliableChannelsMP2 extends AvaliableChannels{
     private Map<String, Map<String, ChannelInfo>> channelsMap;
 
     {
-        ChannelInfo mono = ChannelInfo.get("mono", 1);
-        ChannelInfo stereo = ChannelInfo.get("stereo", 2);
 
         channelsMap = Map.of(
-                "mp2", Map.of("mono", mono, "stereo", stereo),
-                "mp3", Map.of("mono", mono, "stereo", stereo));
+                "mp2", Map.of("mono", MONO.info(), "stereo", STEREO.info()),
+                "mp3", Map.of("mono", MONO.info(), "stereo", STEREO.info()));
 
     }
 

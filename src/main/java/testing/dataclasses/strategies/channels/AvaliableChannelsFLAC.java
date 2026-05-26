@@ -1,6 +1,7 @@
 package testing.dataclasses.strategies.channels;
 
 import testing.dataclasses.ChannelInfo;
+import static testing.dataclasses.enums.ChannelTypes.*;
 
 import java.util.Map;
 
@@ -8,19 +9,9 @@ public class AvaliableChannelsFLAC extends AvaliableChannels{
     private Map<String, Map<String, ChannelInfo>> channelsMap;
 
     {
-        ChannelInfo mono = ChannelInfo.get("mono", 1);
-        ChannelInfo stereo = ChannelInfo.get("stereo", 2);
-        ChannelInfo surround30 = ChannelInfo.get("3.0", 3);
-        ChannelInfo c40 = ChannelInfo.get("4.0", 4);
-        ChannelInfo c50 = ChannelInfo.get("5.0", 5);
-        ChannelInfo c51 = ChannelInfo.get("5.1", 6);
-        ChannelInfo c61 = ChannelInfo.get("6.1", 7);
-        ChannelInfo c71 = ChannelInfo.get("7.1", 8);
-        ChannelInfo c71w = ChannelInfo.get("7.1(wide)", 8);
-
         channelsMap = Map.of(
-                "alac",  Map.of("mono", mono, "stereo", stereo, "surround (3.0)", surround30, "Quad (4.0)", c40, "5.0", c50, "5.1", c51, "6.1", c61, "Wide Back 7.1", c71w),
-                "flac", Map.of("mono", mono, "stereo", stereo, "Surround (3.0)", surround30, "Quad (4.0)", c40, "5.0", c50, "5.1", c51, "6.1", c61, "7.1", c71));
+                "alac",  Map.of("mono", MONO.info(), "stereo", STEREO.info(), "surround (3.0)", C30.info(), "Quad (4.0)", C40.info(), "5.0", C50.info(), "5.1", C51.info(), "6.1", C61.info(), "Wide Back 7.1", C71W.info()),
+                "flac", Map.of("mono", MONO.info(), "stereo", STEREO.info(), "Surround (3.0)", C30.info(), "Quad (4.0)", C40.info(), "5.0", C50.info(), "5.1", C51.info(), "6.1", C61.info(), "7.1", C71.info()));
 
     }
 
