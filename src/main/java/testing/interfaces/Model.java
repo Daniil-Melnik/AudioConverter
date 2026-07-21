@@ -1,7 +1,7 @@
 package testing.interfaces;
 
-import testing.dataclasses.*;
-import testing.dataclasses.enums.Status;
+import testing.model.dataclasses.*;
+import testing.model.dataclasses.enums.Status;
 
 import java.security.cert.Extension;
 import java.util.Map;
