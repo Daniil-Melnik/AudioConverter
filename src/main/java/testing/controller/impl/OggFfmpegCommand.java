@@ -1,20 +1,25 @@
-package testing.controller;
+package testing.controller.impl;
+
+import lombok.AllArgsConstructor;
+import testing.controller.FfmpegCommand;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OggFfmpegCommand extends FfmpegCommand{
+@AllArgsConstructor
+public class OggFfmpegCommand extends FfmpegCommand {
+    private String pathToUtil;
+
     @Override
     public List<String> getCommand(String ... args){
 
         String inputFile = args[0];
         String codecType = args[1];
-        String sampleRate = args[2];
-        String channels = args[3];
-        String bitrate = args[4];
-        String pathToUtil = args[5];
-        String quality = args[6];
-        String outputFile = args[7];
+        String bitrate = args[2];
+        String sampleRate = args[3];
+        String quality = args[4];
+        String channels = args[5];
+        String outputFile = args[6];
 
         List<String> result = new ArrayList<>(14);
         result.addAll(List.of(pathToUtil, "-i", inputFile, "-c:a", codecType));
