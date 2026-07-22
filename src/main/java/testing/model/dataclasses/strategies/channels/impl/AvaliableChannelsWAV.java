@@ -17,7 +17,6 @@ public class AvaliableChannelsWAV extends AvaliableChannels {
                 "pcm_u8", List.of(MONO, STEREO, C21, C30, C40, C50, C51, C61, C71, C71W),
                 "pcm_s24le", List.of(MONO, STEREO, C21, C30, C40, C50, C51, C61, C71, C71W),
                 "pcm_f32le", List.of(MONO, STEREO, C21, C30, C40, C50, C51, C61, C71, C71W),
-                "alac", List.of(MONO, STEREO, C30, C40, C50, C51, C61, C71W),
                 "flac", List.of(MONO, STEREO, C21, C30, C40, C50, C51, C61, C71, C71W));
     }
 

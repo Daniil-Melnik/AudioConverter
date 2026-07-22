@@ -8,6 +8,6 @@ public class AvaliableCodecsOGG extends AvaliableCodecs {
 
     @Override
     public Set<String> getAvaliableCodecs() {
-        return Set.of("flac", "opus", "speex", "libvorbis");
+        return Set.of("flac", "libopus", "libspeex", "libvorbis");
     }
 }

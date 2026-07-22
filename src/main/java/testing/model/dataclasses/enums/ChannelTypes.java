@@ -21,4 +21,9 @@ public enum ChannelTypes {
     private ChannelTypes(ChannelInfo i){ this.info = i;}
 
     public ChannelInfo info(){ return this.info;}
+
+    @Override
+    public String toString() {
+        return info.getName();
+    }
 }

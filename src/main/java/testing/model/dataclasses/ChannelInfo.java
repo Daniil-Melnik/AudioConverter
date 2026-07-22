@@ -9,6 +9,9 @@ public class ChannelInfo {
         this.ac = ac;
     }
 
+    public String getName() { return name; }
+    public int getAc() { return ac; }
+
     public static ChannelInfo get(String cL, int ac){
         return new ChannelInfo(cL, ac);
     }

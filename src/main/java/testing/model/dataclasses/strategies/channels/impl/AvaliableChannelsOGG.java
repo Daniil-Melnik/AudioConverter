@@ -15,8 +15,8 @@ public class AvaliableChannelsOGG extends AvaliableChannels {
 
         channelsMap = Map.of(
                 "flac", List.of(MONO, STEREO, C51, C71),
-                "opus", List.of(MONO, STEREO, C51, C71),
-                "speex", List.of(MONO),
+                "libopus", List.of(MONO, STEREO, C51, C71),
+                "libspeex", List.of(MONO),
                 "libvorbis", List.of(MONO, STEREO, C51, C71));
     }
 

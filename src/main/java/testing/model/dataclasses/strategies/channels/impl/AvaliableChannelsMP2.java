@@ -15,8 +15,7 @@ public class AvaliableChannelsMP2 extends AvaliableChannels {
     {
 
         channelsMap = Map.of(
-                "mp2", List.of(MONO, STEREO),
-                "mp3", List.of(MONO, STEREO));
+                "mp2", List.of(MONO, STEREO));
 
     }
 

@@ -8,6 +8,6 @@ public class AvaliableCodecsMP3 extends AvaliableCodecs {
 
     @Override
     public Set<String> getAvaliableCodecs() {
-        return Set.of("mp3", "libmp3lame", "ac3", "wmav2");
+        return Set.of("libmp3lame");
     }
 }

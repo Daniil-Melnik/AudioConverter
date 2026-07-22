@@ -17,8 +17,7 @@ public class AvaliableChannelsAAC extends AvaliableChannels {
     {
 
         channelsMap = Map.of(
-            "aac", List.of(MONO, STEREO, C51),
-            "libfdk_aac", List.of(MONO, STEREO, C51));
+            "aac", List.of(MONO, STEREO, C51));
     }
 
 

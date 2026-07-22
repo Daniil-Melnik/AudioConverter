@@ -21,10 +21,7 @@ public class AvaliableChannelsMP3 extends AvaliableChannels {
         ChannelInfo c51 = ChannelInfo.get("5.1", 6);
 
         channelsMap = Map.of(
-            "mp3", List.of(MONO, STEREO),
-            "libmp3lame", List.of( MONO,  STEREO),
-            "ac3", List.of(MONO, STEREO, C21, C40, C51, C22),
-            "wmav2", List.of(MONO, STEREO));
+            "libmp3lame", List.of( MONO,  STEREO));
     }
 
 

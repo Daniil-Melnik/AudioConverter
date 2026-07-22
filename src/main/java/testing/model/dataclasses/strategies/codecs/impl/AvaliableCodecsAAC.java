@@ -8,6 +8,6 @@ public class AvaliableCodecsAAC extends AvaliableCodecs {
 
     @Override
     public Set<String> getAvaliableCodecs() {
-        return Set.of("aac", "libfdk_aac");
+        return Set.of("aac");
     }
 }

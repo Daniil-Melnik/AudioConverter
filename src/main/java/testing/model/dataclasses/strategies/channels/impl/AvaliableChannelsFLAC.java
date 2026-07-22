@@ -13,7 +13,7 @@ public class AvaliableChannelsFLAC extends AvaliableChannels {
 
     {
         channelsMap = Map.of(
-                "alac",  List.of(MONO, STEREO, C30, C40, C50, C51, C61, C71W)
+                "flac",  List.of(MONO, STEREO, C30, C40, C50, C51, C61, C71W)
                 );
 
     }
