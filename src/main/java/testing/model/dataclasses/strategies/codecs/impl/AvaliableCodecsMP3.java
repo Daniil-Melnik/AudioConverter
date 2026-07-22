@@ -1,4 +1,6 @@
-package testing.model.dataclasses.strategies.codecs;
+package testing.model.dataclasses.strategies.codecs.impl;
+
+import testing.model.dataclasses.strategies.codecs.AvaliableCodecs;
 
 import java.util.Set;
 

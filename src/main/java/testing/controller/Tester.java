@@ -1,16 +1,12 @@
 package testing.controller;
 
-import testing.model.dataclasses.strategies.channels.AvaliableChannels;
-import testing.model.dataclasses.strategies.channels.AvaliableChannelsWAV;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
-import java.util.concurrent.Callable;
 
 public class Tester {
-    private static final String INPUT = "C:\\audio_test_3\\test.mp3";
+    private static final String INPUT = "C:\\audio_test_3\\test.aac";
     private static final String OUTPUT = "C:\\audio_test_3\\test.wav";
 
     private static final String PATH_TO_COMMAND = "C:\\Program Files\\ffmpeg\\bin\\ffmpeg.exe";
@@ -66,7 +62,7 @@ public class Tester {
         String sampleRate = "11025";
         String channels = "3";
 
-        List<String> command = CommandBuilder.getWavCommand(
+        /*List<String> command = CommandBuilder.getWavCommand(
                 INPUT,
                 OUTPUT,
                 codecType,
@@ -75,7 +71,7 @@ public class Tester {
                 channelLayout,
                 PATH_TO_COMMAND);
 
-        task(command);
+        task(command);*/
     }
 
 

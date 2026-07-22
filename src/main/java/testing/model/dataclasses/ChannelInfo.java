@@ -1,11 +1,11 @@
 package testing.model.dataclasses;
 
 public class ChannelInfo {
-    private String channelLayout;
+    private String name;
     private int ac;
 
     private ChannelInfo(String cL, int ac){
-        this.channelLayout = cL;
+        this.name = cL;
         this.ac = ac;
     }
 
