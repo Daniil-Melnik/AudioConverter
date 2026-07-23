@@ -4,6 +4,7 @@ public class ChannelInfo {
     private String name;
     private int ac;
 
+
     private ChannelInfo(String cL, int ac){
         this.name = cL;
         this.ac = ac;
