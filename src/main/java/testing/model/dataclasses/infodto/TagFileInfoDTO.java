@@ -9,7 +9,7 @@ import java.util.Map;
 @AllArgsConstructor
 @Getter
 @Setter
-public class TagFileInfo {
+public class TagFileInfoDTO {
     private String title;
     private String album;
     private String artist;
@@ -29,7 +29,8 @@ public class TagFileInfo {
     private String date;
     private String url;
 
-    public TagFileInfo(Map<String, String> map){
+    // дто для переноса инфы о тегах файла от парсера в блок хранилища
+    public TagFileInfoDTO(Map<String, String> map){
         title = map.getOrDefault("title", null);
         album = map.getOrDefault("album", null);
         artist = map.getOrDefault("artist", null);

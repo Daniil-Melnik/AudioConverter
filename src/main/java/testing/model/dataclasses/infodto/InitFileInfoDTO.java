@@ -7,7 +7,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class InitFileInfo {
+// dto для переноса инфы о файле от парсера в блок хранилища
+public class InitFileInfoDTO {
     private String paths;
     private float duration;
     private long volume;

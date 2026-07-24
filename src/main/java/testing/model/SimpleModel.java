@@ -3,7 +3,7 @@ package testing.model;
 import testing.interfaces.Model;
 import testing.model.dataclasses.ChannelInfo;
 import testing.model.dataclasses.enums.Status;
-import testing.model.dataclasses.infodto.TagFileInfo;
+import testing.model.dataclasses.infodto.TagFileInfoDTO;
 import testing.model.dataclasses.modelblocks.TargetInfoBlock;
 
 import java.security.cert.Extension;
@@ -13,12 +13,12 @@ import java.util.Set;
 public class SimpleModel implements Model {
 
     @Override
-    public TagFileInfo getFileTagInfo(String key) {
+    public TagFileInfoDTO getFileTagInfo(String key) {
         return null;
     }
 
     @Override
-    public void setFileTagInfo(String key, TagFileInfo info) {
+    public void setFileTagInfo(String key, TagFileInfoDTO info) {
 
     }
 

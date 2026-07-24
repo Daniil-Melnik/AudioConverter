@@ -2,7 +2,7 @@ package testing.interfaces;
 
 import testing.model.dataclasses.*;
 import testing.model.dataclasses.enums.Status;
-import testing.model.dataclasses.infodto.TagFileInfo;
+import testing.model.dataclasses.infodto.TagFileInfoDTO;
 import testing.model.dataclasses.modelblocks.TargetInfoBlock;
 
 import java.security.cert.Extension;
@@ -10,8 +10,8 @@ import java.util.Map;
 import java.util.Set;
 
 public interface Model {
-    TagFileInfo getFileTagInfo(String key);
-    void setFileTagInfo(String key, TagFileInfo info);
+    TagFileInfoDTO getFileTagInfo(String key);
+    void setFileTagInfo(String key, TagFileInfoDTO info);
 
     TargetInfoBlock getTargetInfo(String key);
     void setTargetExtension(String key, Extension ext);

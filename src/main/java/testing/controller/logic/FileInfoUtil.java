@@ -4,15 +4,17 @@ import com.github.kokorin.jaffree.ffprobe.FFprobe;
 import com.github.kokorin.jaffree.ffprobe.FFprobeResult;
 import com.github.kokorin.jaffree.ffprobe.Format;
 import com.github.kokorin.jaffree.ffprobe.Stream;
-import testing.model.dataclasses.infodto.InitFileInfo;
-import testing.model.dataclasses.infodto.TagFileInfo;
+import testing.model.dataclasses.infodto.InitFileInfoDTO;
+import testing.model.dataclasses.infodto.TagFileInfoDTO;
 
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+// подаём файл возвращаем dto для погрузки в модель
+
 public class FileInfoUtil {
-    public static InitFileInfo getInitFileInfo(String pathToFile){
+    public static InitFileInfoDTO getInitFileInfo(String pathToFile){
 
         String codecName = null;
         int frequency = -1;
@@ -43,10 +45,10 @@ public class FileInfoUtil {
             System.err.println("Ошибка при чтении файла: " + e.getMessage());
             e.printStackTrace();
         }
-        return new InitFileInfo(pathToFile, duration, volume, -1, codecName, frequency, standard, numOfChannels);
+        return new InitFileInfoDTO(pathToFile, duration, volume, -1, codecName, frequency, standard, numOfChannels);
     }
 
-    public static TagFileInfo getTagFileInfo(String pathToFile){
+    public static TagFileInfoDTO getTagFileInfo(String pathToFile){
 
         Map<String, String> map = new HashMap<>();
 
@@ -79,7 +81,7 @@ public class FileInfoUtil {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        return new TagFileInfo(map);
+        return new TagFileInfoDTO(map);
     }
 
     public static void main (String ... args){
