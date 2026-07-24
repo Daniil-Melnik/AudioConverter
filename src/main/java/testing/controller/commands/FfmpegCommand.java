@@ -1,4 +1,4 @@
-package testing.controller;
+package testing.controller.commands;
 
 import java.util.List;
 

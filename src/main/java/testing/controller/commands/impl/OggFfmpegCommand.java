@@ -1,7 +1,7 @@
-package testing.controller.impl;
+package testing.controller.commands.impl;
 
 import lombok.AllArgsConstructor;
-import testing.controller.FfmpegCommand;
+import testing.controller.commands.FfmpegCommand;
 
 import java.util.ArrayList;
 import java.util.List;

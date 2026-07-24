@@ -1,17 +1,18 @@
-package testing.model.dataclasses;
+package testing.model.dataclasses.modelblocks;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import testing.model.dataclasses.enums.ChannelTypes;
+import testing.model.dataclasses.enums.Codecs;
 import testing.model.dataclasses.enums.FileExtensions;
 
 @AllArgsConstructor
 @Getter
 @Setter
-public class TargetInfo {
+public class TargetInfoBlock {
     private FileExtensions extension;
-    private String targetCodec;
+    private Codecs targetCodec;
     private String targetRate;
     private ChannelTypes channelType;
     private String bitRate;

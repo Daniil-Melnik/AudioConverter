@@ -2,16 +2,18 @@ package testing.interfaces;
 
 import testing.model.dataclasses.*;
 import testing.model.dataclasses.enums.Status;
+import testing.model.dataclasses.infodto.TagFileInfo;
+import testing.model.dataclasses.modelblocks.TargetInfoBlock;
 
 import java.security.cert.Extension;
 import java.util.Map;
 import java.util.Set;
 
 public interface Model {
-    FileTagInfo getFileTagInfo(String key);
-    void setFileTagInfo(String key, FileTagInfo info);
+    TagFileInfo getFileTagInfo(String key);
+    void setFileTagInfo(String key, TagFileInfo info);
 
-    TargetInfo getTargetInfo(String key);
+    TargetInfoBlock getTargetInfo(String key);
     void setTargetExtension(String key, Extension ext);
     void setTargetCodec(String key, String codec);
     void setTargetRate(String key, String rate);
